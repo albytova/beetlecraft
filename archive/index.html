@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BeetleCraft - магазин крафтового пива в Пензе</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/76d74aabe4.js"></script>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
+    <link rel="stylesheet" href="styles/styles6.css">
+
+    <script src="https://vk.com/js/api/openapi.js?160" type="text/javascript"></script>
+    <script src="js/papaparse.min.js"></script>
+    <script src="js/device.js"></script>
+    <script type="text/javascript" src="src/src19.js"></script>
+
+    <script type="text/javascript" defer="true">
+
+      window.onload = function () {
+          var mvp = document.getElementById('viewport');
+          console.log($(document).width());
+          window.setTimeout(function () {
+            mvp.setAttribute('content','width=' + $(document).width());
+          }, 1000);
+      }
+      init();
+    </script>
+
+    <title>BeetleCraft - магазин крафтового пива в Пензе</title>
+
+  </head>
+  <body>
+
+    <header class="header">
+      <!-- <img src="images/shapka.png" height="30px">  -->
+            <span style="color: white;font-size: 25px">BeetleCraft |</span>
+            <span style="color: white;font-size: 25px">Магазин крафтового пива |</span>
+            <a href="https://vk.com/beetlecraft" target="_blank"><img src="icons/vk.png" width="32"></a>
+            <a href="https://www.instagram.com/beetle.craft" target="_blank"><img src="icons/inst.png" width="32"></a>      
+    </header>
+    
+    <nav class="navbar navbar-expand-lg col-md-12" style="margin-bottom:0;margin-top:0;">
+      <!-- <a class="navbar-brand" href="#" ><img src="images/logo.png" height="40px"></a> -->
+        <ul class="nav nav-pills" id="mainTab">
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="tab" href="#draft" id="draftA">НА КРАНАХ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  data-toggle="tab" href="#bottle" id="bottleA">СТЕКЛО / БАНКИ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  data-toggle="tab" href="#contact" id="contactA">КОНТАКТЫ</a>
+          </li>         
+        </ul>
+    </nav>
+   <!--  <div class="navbar navbar-expand-lg col-md-3" style="margin-bottom:0;margin-top:0;">
+    	 <ul class="nav nav-pills">
+    	 	<li class="nav-item">
+    			<a class="nav-link"  data-toggle="tab" href="#korzina" id="korzinaA">
+    			    	 		<i class="fa fa-shopping-basket" aria-hidden="true" style="margin-right: 8px"></i>КОРЗИНА  <span id="korzinaSum"></span></a>
+    		</li>
+    	</ul>
+    </div> -->
+
+    <div class="col-md-12" style="background-color: white">
+          <div class="tab-content">
+            <div id="draftTab" class="tab-panel active">    
+                  <div id="draftFilterPanel">
+
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-ipa" onclick="clickByFilterDraftBtn(this)">+ APA/IPA/DIPA</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-stout" onclick="clickByFilterDraftBtn(this)">+ стаут/портер</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-hard" onclick="clickByFilterDraftBtn(this)">+ крепче 10%</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-fruit" onclick="clickByFilterDraftBtn(this)">+ фруктовое/ягодное</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-classic" onclick="clickByFilterDraftBtn(this)">+ классика</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-cider" onclick="clickByFilterDraftBtn(this)">+ сидр</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-other" onclick="clickByFilterDraftBtn(this)">+ особое</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-sour" onclick="clickByFilterDraftBtn(this)">+ sour ale/gose</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-weizen" onclick="clickByFilterDraftBtn(this)">+ пшеничное</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-tomato" onclick="clickByFilterDraftBtn(this)">+ томатное/суп</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-mead" onclick="clickByFilterDraftBtn(this)">+ медовуха</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-inostr" onclick="clickByFilterDraftBtn(this)">+ иностранное</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-smoothie" onclick="clickByFilterDraftBtn(this)">+ смузи</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-notalko" onclick="clickByFilterDraftBtn(this)">+ безалкогольное</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-belgia" onclick="clickByFilterDraftBtn(this)">+ бельгия</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-wild" onclick="clickByFilterDraftBtn(this)">+ wild ale</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-europa" onclick="clickByFilterDraftBtn(this)">+ европейская классика</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-history" onclick="clickByFilterDraftBtn(this)">+ исторические</button>
+                      <button type="button" class="btn btn-labeled btn-default" name="btn-draft-limonad" onclick="clickByFilterDraftBtn(this)">+ лимонад</button>
+
+                    <button type="button" class="btn btn-brewery" id="btn-draft-brewery" onclick="cancelFilterDraftByBrewery(this)" style="display: none;">
+                    	<i class="glyphicon glyphicon-remove"></i>фильтр:  
+                    	<span id="spn-draft-brewery"></span>	
+                    </button>
+                 </div>
+                 <div id="draftSearch">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default" style="border:0">
+                            <i class="glyphicon glyphicon-search"></i>
+                          </button>
+                        </div>
+                      <input type="text"  style="border:0" class="form-control" placeholder="Найти" onkeyup="searchDraft()" id="inputSearchDraft">
+                    </div>
+                 </div>                 
+                 <div id="draftGrid"></div>   
+            </div>
+
+            <div id="bottleTab" class="tab-panel" style="display: none">  
+              <div id="bottleFilterPanel">
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-ipa" onclick="clickByFilterBottleBtn(this)">+ APA/IPA/DIPA</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-stout" onclick="clickByFilterBottleBtn(this)">+ стаут/портер</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-hard" onclick="clickByFilterBottleBtn(this)">+ крепче 10%</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-fruit" onclick="clickByFilterBottleBtn(this)">+ фруктовое/ягодное</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-classic" onclick="clickByFilterBottleBtn(this)">+ классика</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-cider" onclick="clickByFilterBottleBtn(this)">+ сидр</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-other" onclick="clickByFilterBottleBtn(this)">+ особое</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-sour" onclick="clickByFilterBottleBtn(this)">+ sour ale/gose</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-weizen" onclick="clickByFilterBottleBtn(this)">+ пшеничное</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-tomato" onclick="clickByFilterBottleBtn(this)">+ томатное/суп</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-mead" onclick="clickByFilterBottleBtn(this)">+ медовуха</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-inostr" onclick="clickByFilterBottleBtn(this)">+ иностранное</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-smoothie" onclick="clickByFilterBottleBtn(this)">+ смузи</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-notalko" onclick="clickByFilterBottleBtn(this)">+ безалкогольное</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-belgia" onclick="clickByFilterBottleBtn(this)">+ бельгия</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-wild" onclick="clickByFilterBottleBtn(this)">+ wild ale</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-europa" onclick="clickByFilterBottleBtn(this)">+ европейская классика</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-history" onclick="clickByFilterBottleBtn(this)">+ исторические</button>
+                  <button type="button" class="btn btn-labeled btn-default" name="btn-bottle-limonad" onclick="clickByFilterBottleBtn(this)">+ лимонад</button>
+                  <button type="button" class="btn btn-labeled btn-default btn-brewery" id="btn-bottle-brewery" onclick="cancelFilterBottleByBrewery(this)" style="display: none;">
+                    	<i class="glyphicon glyphicon-remove"></i>фильтр:  
+                    	<span id="spn-bottle-brewery"></span>	
+                </button>
+             </div> 
+              <div id="bottleSearch">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                    <button class="btn btn-default" style="border:0">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                  <input type="text" class="form-control" style="border:0" placeholder="Найти" onkeyup="searchBottle()" id="inputSearchBottle" style="z-index: 1;">
+                </div>
+             </div>
+            <div id="bottleGrid"></div>                             
+            </div>
+          </div>
+
+          <div id="contactTab" class="tab-panel" style="display: none">  
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <span style="font-size: 14pt;">Магазин крафтового пива <b>BeetleCraft</b></span><br>
+                  <span><i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;<a href="https://yandex.ru/maps/?um=constructor%3Ae3354dc61cc2a7617ea06d35fe7fa3f8bc68128f3ac4a173956e3f9a8304c544&source=constructorLink" target="_blank">Пенза, улица Московская, дом 2</a></span><br>
+                  <span><i class="glyphicon glyphicon-phone-alt"></i>&nbsp;&nbsp;8 (939) 806-18-75</span><br>
+                  <span><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;Ежедневно с 14 до 01 часов</span><br>
+                </div>
+                <div class="col-sm-6">
+                  <span><i class="fa fa-vk" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://vk.com/beetlecraft" target="_blank">vk.com/beetlecraft</a></span><br>
+                  <span><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.instagram.com/beetle.craft" target="_blank">instagram.com/beetle.craft</a></span><br>
+                  <span><i class="fa fa-telegram" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://t.me/beetlecraft" target="_blank">t.me/beetlecraft</a></span><br>
+                  <span><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;sales@beetlecraft.ru</span>
+                </div>                
+              </div>
+                <div class="row">
+                <div class="col-sm">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3354dc61cc2a7617ea06d35fe7fa3f8bc68128f3ac4a173956e3f9a8304c544&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="foodTab" class="tab-panel" style="display: none">              
+            <div class="card-group">
+            	<div id="foodPanel" class="row row-cols-1 row-cols-md-4">
+            </div>                             
+          </div>
+
+           <div id="korzinaTab" class="tab-panel" style="display: none">              
+            <div class="card-group">
+            	<div id="korzinaPanel" class="row row-cols-1 row-cols-md-4">
+            </div>                             
+          </div> 
+    </div>
+
+     <footer class="page-footer" id="fixedFooter" >
+            <div class="col-sm text" style="padding: 10px;font-size: 18px">
+
+                          Пенза, улица Московская, дом 2 | Ежедневно с 14 до 01 часов
+              
+          </div>
+    </footer>
+
+  </body>
+
+</html>

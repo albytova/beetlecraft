@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5f6b53f-42dc-457a-9ae8-9026608d0b8a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="35L31jEGM05hc49gej1F3n696Ri" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5f6b53f-42dc-457a-9ae8-9026608d0b8a" name="Default Changelist" comment="" />
+      <created>1762875312168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762875312168</updated>
+      <workItem from="1762875313360" duration="1466000" />
+      <workItem from="1762877297529" duration="1390000" />
+      <workItem from="1762879109460" duration="2919000" />
+      <workItem from="1762882069775" duration="1801000" />
+      <workItem from="1762883898202" duration="1650000" />
+      <workItem from="1762885741675" duration="1794000" />
+      <workItem from="1762887568929" duration="1577000" />
+      <workItem from="1763044075185" duration="1814000" />
+      <workItem from="1763045920565" duration="1133000" />
+      <workItem from="1763048466309" duration="1788000" />
+      <workItem from="1763050296371" duration="965000" />
+      <workItem from="1763053838280" duration="1255000" />
+      <workItem from="1763059072835" duration="1100000" />
+      <workItem from="1763133295977" duration="1638000" />
+      <workItem from="1763135192268" duration="1289000" />
+      <workItem from="1763138141672" duration="1410000" />
+      <workItem from="1763139959525" duration="1782000" />
+      <workItem from="1763142563632" duration="2356000" />
+      <workItem from="1763144949252" duration="1137000" />
+      <workItem from="1763146755285" duration="1784000" />
+      <workItem from="1763148564817" duration="668000" />
+      <workItem from="1764696785958" duration="1427000" />
+      <workItem from="1764698920221" duration="1696000" />
+      <workItem from="1764702889875" duration="843000" />
+      <workItem from="1767616427230" duration="1993000" />
+      <workItem from="1767618449068" duration="1786000" />
+      <workItem from="1767871874936" duration="1756000" />
+      <workItem from="1767875046008" duration="635000" />
+      <workItem from="1770118927198" duration="1031000" />
+      <workItem from="1770129224003" duration="1255000" />
+      <workItem from="1770135593799" duration="595000" />
+      <workItem from="1770138013845" duration="1529000" />
+      <workItem from="1770140238902" duration="1300000" />
+      <workItem from="1770286456340" duration="605000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1763139696081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1763139696081" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1767618561051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1767618561051" />
+  </component>
+</project>

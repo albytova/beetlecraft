@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Анкеты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style/profiles.scss"/>
+</head>
+<body>
+
+<!-- Верхнее меню -->
+<div class="top-menu">
+    <div class="icon" onclick="showNewBuddies()">
+        <i class="fas fa-beer"></i> <!-- Иконка "Новые собутыльники" -->
+    </div>
+    <div class="center-button" onclick="showBuddies()">
+        МОИ СОБУТЫЛЬНИКИ
+    </div>
+    <div class="icon" onclick="showProfile()">
+        <i class="fas fa-user"></i> <!-- Иконка "Профиль" -->
+    </div>
+</div>
+
+<!-- Страница с анкетами -->
+<div class="container">
+    <div id="profiles-page">
+
+        <div class="grid" id="grid">
+            <!-- Плитки будут добавлены с помощью JavaScript -->
+        </div>
+    </div>
+</div>
+
+    <!-- Детальная страница -->
+    <div id="detail-page" class="detail-page">
+        <img id="detail-photo" src="" alt="Фото">
+        <h2 id="detail-name"></h2>
+        <p><strong>Любимые стили пива:</strong> <span id="detail-beer-styles"></span></p>
+        <p><strong>Любимое пиво:</strong> <span id="detail-favorite-beer"></span></p>
+        <p><strong>Как часто готов видеться:</strong> <span id="detail-meet-frequency"></span></p>
+        <p><strong>Дополнительный напиток:</strong> <span id="detail-extra-drink"></span></p>
+        <p><strong>О себе:</strong> <span id="detail-about"></span></p>
+        <button class="like-button" onclick="likeProfile()">❤️ Лайк</button>
+        <button class="back-button" onclick="goBack()">Назад</button>
+    </div>
+</div>
+
+</body>
+<script src="js/profiles.js"></script>
+</html>

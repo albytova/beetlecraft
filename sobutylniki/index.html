@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="style/registration.scss"/>
+
+</head>
+<body onload="load()">
+
+<div class="carousel" >
+    <div class="slides">
+        <div class="slide">
+            <h2>Шаг 1: Имя</h2>
+            <input type="text" id="name" placeholder="Введите ваше имя">
+            <div class="buttons">
+                <button onclick="nextSlide()">Далее</button>
+            </div>
+        </div>
+        <div class="slide">
+            <h2>Шаг 2: Загрузите фото</h2>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <div class="buttons">
+                <button class="back" onclick="prevSlide()">Назад</button>
+                <button onclick="uploadPhoto();nextSlide()">Далее</button>
+            </div>
+        </div>
+        <div class="slide">
+            <h2>Шаг 3: Какие стили предпочитаете</h2>
+            <select id="checkbox-styles" name="checkbox-styles" multiple>
+            </select>
+            <div class="buttons">
+                <button class="back" onclick="prevSlide()">Назад</button>
+                <button onclick="nextSlide()">Далее</button>
+            </div>
+        </div>
+        <div class="slide">
+            <h2>Шаг 4: Что любите кроме пива?</h2>
+            <select id="checkbox-drinks" name="checkbox-drinks" multiple>
+            </select>
+            <div class="buttons">
+                <button class="back" onclick="prevSlide()">Назад</button>
+                <button onclick="nextSlide()">Далее</button>
+            </div>
+        </div>
+        <div class="slide">
+            <h2>Шаг 5: Любимое пиво</h2>
+            <input type="text" id="beer" placeholder="Введите ваше любимое пиво">
+            <div class="buttons">
+                <button onclick="nextSlide()">Далее</button>
+            </div>
+        </div>
+        <div class="slide">
+            <h2>Шаг 6: Как часто готовы собутыльничать?</h2>
+            <select id="checkbox-period" name="checkbox-period" >
+            </select>
+            <div class="buttons">
+                <button class="back" onclick="prevSlide()">Назад</button>
+                <button onclick="nextSlide()">Далее</button>
+            </div>
+        </div>
+        <div class="slide">
+            <h2>Шаг 7: Расскажите о себе</h2>
+            <textarea rows="6"  id="description" placeholder="Расскажите немного о себе"></textarea>
+            <div class="buttons">
+                <button class="back" onclick="prevSlide()">Назад</button>
+                <button onclick="submitForm()">Зарегистрироваться</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/registration.js"></script>
+</body>
+</html>

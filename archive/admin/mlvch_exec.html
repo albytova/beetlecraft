@@ -1,0 +1,203 @@
+﻿<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Заказ на кухню">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Активные Заказы</title>
+
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     <script src="https://use.fontawesome.com/76d74aabe4.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+ </head>
+  <body>
+
+    <p style="padding: 40px">
+
+        <audio id="audioFrenata" src="beep.mp3" controls type = "audio/mpeg"></audio>
+
+        <button type="submit" class="btn btn-danger" id="btn-init" onclick="setInit()" style="display:block;margin-bottom: 30px">ТЫКНИ В ПЛЕЕР ДЛЯ ЗАПУСКА ЗВУКА</button>
+
+
+    <table id="table-zakaz">
+
+        <thead>
+            <tr><th>ЗАКАЗЫ <span id="span-date"></span></th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+    </p>
+
+
+  <script>
+
+      let LAST_DATA = {};
+      let IS_FIRST_ZAKAZ = true;
+
+      let d = new Date();
+      let ye = new Intl.DateTimeFormat('ru', { year: 'numeric' }).format(d);
+      let mo = new Intl.DateTimeFormat('ru', { month: 'short' }).format(d);
+      let da = new Intl.DateTimeFormat('ru', { day: '2-digit' }).format(d);
+      document.getElementById("span-date").innerHTML = da + " " + mo + " " + ye;
+
+      let NAMES = {};
+
+      $.ajax({
+          method: 'GET',
+          url: './mlvch_kitchen.php',
+          data : {
+              'query' : 'getNames'
+          },
+          success: function(result) {
+              if (result) {
+                  let data = JSON.parse(result);
+                  data.forEach((el) => {
+                    NAMES[el.id] = el.name;
+                  })
+                  loadPageNew(1);
+              }
+
+          },
+          failure: function(result) {
+              console.log(result);
+          }
+      });
+
+
+      setTimeout(function tick() {
+          loadPageNew();
+          setTimeout(tick, 10000);
+      }, 10000);
+
+      function setInit () {
+          document.getElementById("btn-init").hidden = "true";
+          document.getElementById("audioFrenata").hidden = "true";
+      }
+
+      function setExecZakaz (number) {
+          if (!confirm("Отметить заказ #"+number+" выполненным?"))
+              return;
+
+          $.ajax({
+              method: 'GET',
+              url: './mlvch_kitchen.php',
+              data: {
+                  'query': 'setExecZakazNew',
+                  'number': number
+              },
+              success: function (result) {
+                console.log(result);
+                loadPageNew(1);
+              }
+          })
+      }
+
+      function loadPageNew(is_refresh) {
+
+          let zakazez = {};
+
+          $.ajax({
+              method: 'GET',
+              url: './mlvch_kitchen.php',
+              data: {
+                  'query': 'loadZakazNew'
+              },
+              success: function (result) {
+                  if (result) {
+                      let data = JSON.parse(result);
+
+                      data.forEach((el) => {
+                         if (!zakazez[el.number])
+                             zakazez[el.number] = {
+                                 number: el.number,
+                                 datetime_zakaz: el.datetime_zakaz,
+                                 comment: el.comment,
+                                 is_exec: el.is_exec,
+                                 is_off: el.is_off,
+                                 dish: []
+                             }
+                          zakazez[el.number].dish.push({
+                              id_name: el.id_name,
+                              name: NAMES[el.id_name],
+                              count: el.count
+                          })
+
+                      })
+
+                      if (Object.keys(zakazez).length != Object.keys(LAST_DATA).length || is_refresh === 1) {
+
+                          let tableRef = document.getElementById('table-zakaz').getElementsByTagName('tbody')[0];
+                          $('#table-zakaz tbody').empty();
+                          tableRef.insertRow(tableRef.rows.length).innerHTML = "-";
+
+                          for (let number in zakazez) {
+
+                              let is_new = LAST_DATA[number]? false : true;
+                              let zakaz = zakazez[number];
+
+                              if (is_new === true && Object.keys(LAST_DATA).length > 0 )
+                                  zakaz['is_new'] = true;
+                              else
+                                  zakaz['is_new'] = false;
+
+                              if (zakaz['is_new'] == false && Object.keys(LAST_DATA).length == 0 && IS_FIRST_ZAKAZ) {
+                                  zakaz['is_new'] = true;
+                                  IS_FIRST_ZAKAZ = false;
+                              }
+
+                                  let newRow = tableRef.insertRow(tableRef.rows.length);
+                                  let text = "<td ";
+
+                                  if (zakaz.is_exec == 1)
+                                      text += "style='color: lightgrey'";
+
+                                  if (zakaz.is_new == true) {
+                                      text += "style='color: blue'";
+
+                                      var audio = document.getElementById('audioFrenata'); //new Audio(); // Создаём новый элемент Audio
+                                      audio.loop = false;
+                                      audio.play();
+
+                                      setTimeout(function () {
+                                          audio.stop();
+                                      }, 7000);
+                                  }
+
+                                      text += "><b>Заказ #"+zakaz.number+"</b><br>";
+
+                                      for (let i in zakaz.dish) {
+                                          let dishes = zakaz.dish[i];
+                                          text += dishes.name + " - " + dishes.count + " шт.<br>";
+                                      }
+
+                                      if (+zakaz.is_off > 0) text += "<color red>С СОБОЙ</color><br>";
+                                      text += "<i>Стол " + zakaz.comment + "</i><br>";
+
+                                      text += "</td>";
+
+                                      if (+zakaz.is_exec != 1)
+                                        text += "<button style='border: none' onclick='setExecZakaz("+ zakaz.number +")'>Готово</button>";
+
+                                    newRow.innerHTML = text;
+                                    tableRef.insertRow(tableRef.rows.length).innerHTML = "-";
+                          }
+                          LAST_DATA = zakazez;
+
+                      }
+                  }
+              },
+              failure: function (result) {
+                  console.log(result);
+              }
+          });
+      }
+
+
+  </script>
+
+  </body>
+</html>

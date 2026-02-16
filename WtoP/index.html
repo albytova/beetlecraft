@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/76d74aabe4.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <title>Walking To Penza</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding-top: 10%;
+            background-image: url("map.jpg");
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            color: white;
+            text-align: center;
+            alignment: center;
+            font-size: 20pt;
+
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #hellow_text {
+            margin-top: 40%;
+            font-size: 32px;
+            text-shadow: 0 0 1em #22220C, 0 0 0.1em #22220C;
+            font-weight: bold;
+            line-height: 1.1;
+        }
+
+        #input_step_count {
+            margin-top: 15px;
+            height: 50px;
+            width: 80%;
+            border-radius: 9px;
+            text-align: center;
+            box-shadow: 1px 1px #22220C;
+        }
+
+        #btn_send {
+            margin-top: 2%;
+            height: 50px;
+            width: 80%;
+            border-radius: 9px;
+            color: black;
+            box-shadow: 1px 1px #22220C;
+        }
+
+        #result_text {
+            text-align: center;
+            width: 80%;
+            display: none;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 40%;
+
+            font-size: 30px;
+            text-shadow: 0 0 2em #22220C, 0 0 0.2em #22220C;
+            font-weight: bold;
+            line-height: 1.1;
+        }
+
+        #result_text_1 {
+            border-radius: 7px;
+            border: 2px solid grey;
+            padding: 8px;
+            box-shadow: 1px 1px #22220C;
+            line-height: 1.4;
+        }
+
+        #result_text_2 {
+            margin-top: 50px;
+            border-radius: 7px;
+            border: 2px solid grey;
+            padding: 8px;
+            box-shadow: 1px 1px #22220C;
+            line-height: 1.4;
+        }
+
+        #main {
+            flex: 1;
+        }
+
+        footer {
+            font-size: 14pt;
+            margin-bottom: 10%;
+        }
+
+        footer button {
+            border-radius: 7px;
+            background: #00282e;
+            padding: 5px;
+            width: 40%;
+            color: lightgrey;
+            font-weight: bold;
+            border: 1px solid #7f7f7f;
+        }
+
+        #last_text {
+            font-weight: bold;
+            font-size: 22pt;
+            text-shadow: 3px 3px #222222, 0 0 3em black, 0 0 0.3em black;
+        }
+    </style>
+
+    <script>
+
+        const STEPS_TO_PENZA = 965161;
+        const STEPS_TO_HOUR = 1398;
+        let LAST_STEPS = 0;
+        let IS_FINISH = false;
+
+
+        function readData () {
+            $.ajax({
+                url: "index.php",
+                type: 'POST',
+                data: {
+                    query: "readData"
+                },
+                success: function (rez) {
+                    LAST_STEPS = parseInt(rez);
+
+                    if (typeof LAST_STEPS != "number" || isNaN(LAST_STEPS) || LAST_STEPS == 0) {
+                        LAST_STEPS = 0;
+                        $("#last_text").hide("fast");
+                    }
+                    else {
+                        let distance_last = (LAST_STEPS / STEPS_TO_HOUR).toFixed(0);
+                        $("#last_distance").text(distance_last);
+
+                        if (distance_last > 690) {
+                            IS_FINISH = true;
+                            alert('Заюш, Пенза кончилась.. Куда ты собрался?........... Тапни кнопку ШАГАТЬ ЗАНОВО');
+                        }
+                    }
+                },
+                error: function (rez) {
+                    console.log('error');
+                }
+
+            })
+        }
+
+        function sendSteps () {
+            let steps = $("#input_step_count").val();
+            steps = parseInt(steps);
+
+            if (isNaN(steps))
+                return;
+
+            let distance = (steps / STEPS_TO_HOUR).toFixed(1);
+            let distance_left = ((STEPS_TO_PENZA - steps - LAST_STEPS) / STEPS_TO_HOUR).toFixed(0);
+
+            if (distance_left < 2) {
+                alert("Ура! Пензаааа!");
+            }
+
+            $("#txt_left").text(distance_left);
+            $("#txt_distance").text(distance);
+
+            $("#result_text").show("fast");
+            $("#hellow_text").hide("fast");
+            $("#last_text").hide("fast");
+            $("#input_step_count").hide("fast");
+            $("#btn_send").hide("fast");
+
+            saveData(steps);
+        }
+
+        function saveData (steps) {
+
+            $.ajax({
+                url: "index.php",
+                type: 'POST',
+                data: {
+                    query: "saveData",
+                    steps: parseInt(steps) + parseInt(LAST_STEPS)
+                },
+                success: function (rez) {
+
+                },
+                error: function (rez) {
+                    console.log('error');
+                }
+            })
+        }
+
+        function toHome () {
+
+            readData();
+
+            $("#result_text").hide("fast");
+            $("#hellow_text").show("fast");
+            $("#input_step_count").show("fast");
+            $("#input_step_count").val("");
+            $("#btn_send").show("fast");
+
+            setTimeout(function () {
+                $("#last_text").show("fast");
+            }, 500)
+        }
+
+        function clearSteps () {
+
+                if (confirm('Ты уверен, что хочешь начать шагать заново?')) {
+                    if (IS_FINISH == true)
+                        alert('Как скажешь, Солнышко)');
+                    IS_FINISH = false;
+                    LAST_STEPS = 0;
+                    saveData(0);
+
+                    $("#result_text").hide("fast");
+                    $("#hellow_text").show("fast");
+                    $("#input_step_count").show("fast");
+                    $("#input_step_count").val("");
+                    $("#btn_send").show("fast");
+
+                    $("#last_text").hide("fast");
+                }
+
+
+        }
+    </script>
+</head>
+<body onload="readData()">
+    <div id="main">
+
+        <div id="last_text" >
+            Ты уже прошел <span id="last_distance"></span> км
+        </div>
+        <div id="hellow_text">
+            Сколько шагов ты<br>прошел сегодня?
+        </div>
+        <input id="input_step_count" type="number" >
+        <button id="btn_send" onclick="sendSteps ()" >ОТПРАВИТЬ</button>
+        <div id="result_text" >
+            <div id="result_text_1" >
+                сегодня ты прошел <span id="txt_distance"></span> км
+            </div>
+            <div id="result_text_2" >
+                до Пензы осталось <span id="txt_left"></span> км
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="toHome()">Ввести Шаги</button>
+        <button onclick="clearSteps()">Шагать заново</button>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form id="readFileForm" enctype="multipart/form-data">
+        <input type="file" name="sales_file" accept=".xlsx" required>
+        <button type="submit">Прочитать файл</button>
+    </form>
+
+    <script>
+        $('#readFileForm').on('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+
+            $.ajax({
+                url: 'test.php?query=readSalesFile',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    var result = JSON.parse(response);
+                    console.log('Данные файла:', result);
+                    if (result.success) {
+                        alert('Файл прочитан: ' + result.total_rows + ' строк');
+                    } else {
+                        alert('Ошибка: ' + result.message);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

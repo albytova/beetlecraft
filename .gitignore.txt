@@ -1,0 +1,4 @@
+node_modules/
+lk_old/
+archive/
+.idea/

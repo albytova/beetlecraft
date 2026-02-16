@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Магазин НОРМА</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="moment.js"></script>
+
+    <!--<script type="text/javascript" src="normalize.css"></script>-->
+
+    <link rel="stylesheet" href="sale.css">
+
+
+</head>
+
+<script type="text/javascript" src="sale.js"></script>
+<body>
+
+<div class="col-md-12">
+    <h1 style="margin: 20px"><b>ПРОДАЖИ</b></h1>
+
+    <button style="height: 30px; width: 40px; border: 1px solid grey; font-weight: bolder; margin: 2px;" onclick="addRow()"><i class="bi bi-plus-square"></i></button>
+    <button style="height: 30px; width: 40px; border: 1px solid grey; font-weight: bolder; margin: 2px;" onclick="editRow()"><i class="bi bi-pencil-square"></i></button>
+    <button style="height: 30px; width: 40px; border: 1px solid grey; font-weight: bolder; margin: 2px;" onclick="deleteRow()"><i class="bi bi-x-square"></i></button>
+    <br>
+            <div id="myGrid"  class="ag-theme-alpine"></div>
+            <div id="resultPanel">
+                <p align="center">
+                    <span id="resultText">Итого:</span><button style="height: 30px; width: 80px;margin-left: 30px;" onclick="click333('НАЛ')">Оплата</button>
+                    <br>
+                    <br><br>
+                    <span id="sumText" style="color: grey; font-style: italic">Продаж за день:</span>
+                    <button style="height: 50px" onclick="closeDay('')">Закрыть день</button>
+                </p>
+            </div>
+</div>
+
+
+
+
+</body>
+</html>

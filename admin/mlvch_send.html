@@ -1,0 +1,137 @@
+﻿<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Заказ на кухню">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Заказ на кухню</title>
+
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     <script src="https://use.fontawesome.com/76d74aabe4.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <script src="moment.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <p>
+        <h1 style="margin-left: 20px;">Заказ на кухню</h1><br>
+
+        <p id="p-names" style="margin-left: 20px; display: inline-block; width: 100%;">
+            <span style='margin-right: 30px; display: inline-block; width: 250px;'>Номер стола: <input id="area-comment" style="display: inline-block; width: 100px;" ></input><br></span>
+            <br>
+        </p>
+        <br>
+        <button type="submit" class="btn btn-success"  style="margin-left: 20px;" onclick="send_zakaz()">Отправить</button>
+
+        <br><br>
+        <p style="font-size: 20px; color: green; margin-left: 5%;">
+             <span id="message-success" style="display: none">Заказ отправлен</span>
+        </p>
+        <p style="font-size: 20px; color: red; margin-left: 5%;">
+            <span id="message-error" style="display: none">Поля не заполнены</span>
+        </p>
+    </p>
+
+  <script>
+
+      var NAMES_ID = [];
+      var NAMES = {};
+
+      function loadNames() {
+          $.ajax({
+              method: 'GET',
+              url: './mlvch_kitchen.php',
+              data : {
+                  'query' : 'getNames'
+              },
+              success: function(result) {
+
+                  if (result) {
+                      let data = JSON.parse(result);
+
+
+                      data.forEach((element) => {
+                                $("#p-names").append("<span style='margin-right: 30px; display: inline-block; width: 350px;'>"+element[1] +"</span><input id='dish-"+element[0]+"' dish="+element[0]+" type='number' min='0' max='10' value='0'><br>");
+                                NAMES_ID.push( element[0] );
+                                NAMES[ element[0] ] = element[1];
+                      })
+                  }
+
+              },
+              failure: function(result) {
+                  console.log(result);
+              }
+          });
+
+
+      }
+
+      loadNames ();
+
+
+      function send_zakaz() {
+          let uniqnum = moment().format('MMDDYYYYHHmmss');
+          let values = [];
+          let count = 0;
+
+          let message = "Новый заказ:\n\n";
+
+          NAMES_ID.forEach((dish) => {
+              let c = +document.getElementById("dish-"+dish).value;
+              if (c > 0) {
+                  values.push({
+                      id: dish,
+                      count: c
+                  });
+                  message += NAMES[dish] + " - " + c + " шт\n";
+              }
+
+              count += c;
+          })
+
+          let is_off = $('#check-isoff').is(':checked')? 1 : 0;
+          let comment = document.getElementById("area-comment").value;
+          message += "\nСтол #" + comment + "\n";
+
+          if (count === 0) {
+              document.getElementById("message-success").style = "display:none";
+              document.getElementById("message-error").style = "display:block";
+              return;
+          }
+
+
+
+              $.ajax({
+                  method: 'GET',
+                  url: './mlvch_kitchen.php',
+                  data : {
+                      'query' : 'sendZakazNew',
+                      'message' : message
+                  },
+                  success: function(result) {
+                      if (+result === 1) {
+                          values.forEach((el) => {
+                              document.getElementById("message-error").style = "display:none";
+                              document.getElementById("message-success").style = "display:block";
+
+                              document.getElementById("dish-" + el.id).value = 0;
+                              document.getElementById("area-comment").value = 0;
+
+                          })
+                      }
+                  },
+                  failure: function(result) {
+                      console.log(result);
+                  }
+              });
+
+
+
+      }
+  </script>
+
+  </body>
+</html>

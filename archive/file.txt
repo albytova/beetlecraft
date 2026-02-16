@@ -1,0 +1,3144 @@
+$data: Array
+(
+    [update_id] => 801431030
+    [message] => Array
+        (
+            [message_id] => 4
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655807840
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431031
+    [message] => Array
+        (
+            [message_id] => 5
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655807853
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431034
+    [message] => Array
+        (
+            [message_id] => 6
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655807885
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431035
+    [message] => Array
+        (
+            [message_id] => 7
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655807904
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431036
+    [message] => Array
+        (
+            [message_id] => 8
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655807970
+            [text] => /putbottle
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 10
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431037
+    [message] => Array
+        (
+            [message_id] => 9
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808010
+            [text] => /putbottle
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 10
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431040
+    [message] => Array
+        (
+            [message_id] => 10
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808017
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431041
+    [message] => Array
+        (
+            [message_id] => 11
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808022
+            [text] => /putbottle
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 10
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431042
+    [message] => Array
+        (
+            [message_id] => 12
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808034
+            [text] => /putbottle
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 10
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431043
+    [message] => Array
+        (
+            [message_id] => 13
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808273
+            [text] => /putbottle
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 10
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431046
+    [message] => Array
+        (
+            [message_id] => 14
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808277
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431047
+    [message] => Array
+        (
+            [message_id] => 15
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808286
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431048
+    [message] => Array
+        (
+            [message_id] => 16
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808479
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431051
+    [message] => Array
+        (
+            [message_id] => 17
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808486
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431052
+    [message] => Array
+        (
+            [message_id] => 18
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808493
+            [text] => /about
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431053
+    [message] => Array
+        (
+            [message_id] => 19
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808521
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431054
+    [message] => Array
+        (
+            [message_id] => 20
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808525
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431055
+    [message] => Array
+        (
+            [message_id] => 21
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808576
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431056
+    [message] => Array
+        (
+            [message_id] => 22
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808706
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431057
+    [message] => Array
+        (
+            [message_id] => 23
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808712
+            [text] => /about
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431060
+    [message] => Array
+        (
+            [message_id] => 24
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808724
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431061
+    [message] => Array
+        (
+            [message_id] => 25
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808730
+            [text] => /about
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431062
+    [message] => Array
+        (
+            [message_id] => 26
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808889
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431063
+    [message] => Array
+        (
+            [message_id] => 27
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655808894
+            [text] => /about
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431066
+    [message] => Array
+        (
+            [message_id] => 28
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809024
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431067
+    [message] => Array
+        (
+            [message_id] => 29
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809027
+            [text] => /about
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431068
+    [message] => Array
+        (
+            [message_id] => 30
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809031
+            [text] => /about
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431069
+    [message] => Array
+        (
+            [message_id] => 31
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809033
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431072
+    [message] => Array
+        (
+            [message_id] => 32
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809125
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431073
+    [message] => Array
+        (
+            [message_id] => 33
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809127
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431076
+    [message] => Array
+        (
+            [message_id] => 34
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809547
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431077
+    [message] => Array
+        (
+            [message_id] => 35
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809550
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431078
+    [message] => Array
+        (
+            [message_id] => 36
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809552
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431079
+    [message] => Array
+        (
+            [message_id] => 37
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809555
+            [text] => /about
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431080
+    [message] => Array
+        (
+            [message_id] => 38
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809588
+            [text] => лук
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431081
+    [message] => Array
+        (
+            [message_id] => 39
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809595
+            [text] => help
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431084
+    [message] => Array
+        (
+            [message_id] => 40
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809748
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431085
+    [message] => Array
+        (
+            [message_id] => 41
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809758
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431086
+    [message] => Array
+        (
+            [message_id] => 42
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809775
+            [text] => /да
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431087
+    [message] => Array
+        (
+            [message_id] => 43
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655809779
+            [text] => да
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431088
+    [message] => Array
+        (
+            [message_id] => 84
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655810084
+            [text] => Яблоки
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431032
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655807884
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431033
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655807885
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431038
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808016
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431039
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808017
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431044
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808276
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431045
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808277
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431049
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808485
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431050
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808486
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431058
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808722
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431059
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655808724
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431064
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809023
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431065
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809024
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431070
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809123
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431071
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809124
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431074
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809545
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431075
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809546
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431082
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809745
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431083
+    [my_chat_member] => Array
+        (
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [date] => 1655809747
+            [old_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => kicked
+                    [until_date] => 0
+                )
+
+            [new_chat_member] => Array
+                (
+                    [user] => Array
+                        (
+                            [id] => 5422293676
+                            [is_bot] => 1
+                            [first_name] => PETBOTTLE
+                            [username] => YOURPACK_BOTTLE_bot
+                        )
+
+                    [status] => member
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431089
+    [message] => Array
+        (
+            [message_id] => 86
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655810179
+            [text] => /help
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 5
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431090
+    [message] => Array
+        (
+            [message_id] => 88
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655810306
+            [text] => Нет
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431091
+    [message] => Array
+        (
+            [message_id] => 90
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655810313
+            [text] => Да
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431092
+    [message] => Array
+        (
+            [message_id] => 92
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811651
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431093
+    [message] => Array
+        (
+            [message_id] => 94
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811656
+            [text] => /sklad
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431094
+    [message] => Array
+        (
+            [message_id] => 96
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811662
+            [text] => /reserv
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 7
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431095
+    [message] => Array
+        (
+            [message_id] => 98
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811668
+            [text] => /sklad
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431096
+    [message] => Array
+        (
+            [message_id] => 100
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811669
+            [text] => Да
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431097
+    [message] => Array
+        (
+            [message_id] => 102
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811673
+            [text] => Лук
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431098
+    [message] => Array
+        (
+            [message_id] => 104
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811676
+            [text] => Груши
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431099
+    [message] => Array
+        (
+            [message_id] => 106
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811677
+            [text] => Чеснок
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431100
+    [message] => Array
+        (
+            [message_id] => 108
+            [from] => Array
+                (
+                    [id] => 360078107
+                    [is_bot] => 
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 360078107
+                    [first_name] => Sergey
+                    [last_name] => Zheleznov
+                    [username] => ack_s
+                    [type] => private
+                )
+
+            [date] => 1655811678
+            [text] => Яблоки
+        )
+
+)
+
+$data: Array
+(
+    [update_id] => 801431101
+    [message] => Array
+        (
+            [message_id] => 110
+            [from] => Array
+                (
+                    [id] => 464101746
+                    [is_bot] => 
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 464101746
+                    [first_name] => Elena
+                    [last_name] => Albytova
+                    [username] => albytova
+                    [type] => private
+                )
+
+            [date] => 1655824567
+            [text] => /sklad
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+

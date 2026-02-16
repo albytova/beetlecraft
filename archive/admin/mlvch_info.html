@@ -1,0 +1,205 @@
+﻿<html lang="en">
+ <head>
+   <!-- <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Статистика по кухне">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+    <title>Статистика по кухне</title>
+    <!-- <script src="moment.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     <script src="https://use.fontawesome.com/76d74aabe4.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  -->
+  </head>
+  <body>
+
+        <p>
+            <div id="nameGrid"></div>
+        </p>
+
+        <p>
+        <h3>Статистика продаж</h3>
+        <div id="infoGrid"></div>
+        </p>
+<!--
+  <script>
+
+
+
+      function initGridName (data) {
+          let INFO_FIELDS = [];
+
+          INFO_FIELDS.push(
+              { name: "date_zakaz", width:10, type: "text", title: "", editing: false }
+          )
+          data.forEach((element) => {
+              if (element.is_avail == '1')
+                  element.is_avail = true;
+              else
+                  element.is_avail = false;
+
+              INFO_FIELDS.push(
+                  { name: "val-"+element.id, type: "text", title: element.name, width: 10, editing: false },
+              )
+          });
+
+          $("#nameGrid").jsGrid({
+              width: "80%",
+              height: "auto",
+              inserting: true,
+              editing: true,
+              data: data,
+
+              fields: [
+                  { name: "name", type: "text", title: "В наличии", width: 250, editing: false },
+                  { name: "is_avail", type: "checkbox", title: "В наличии", sorting: false },
+                  { type: "control" }
+              ],
+
+              controller: {
+                  insertItem: insertName,
+                  deleteItem: deleteName,
+                  updateItem: updateAvail
+              }
+          });
+
+          loadInfo(INFO_FIELDS);
+
+          function updateAvail (values) {
+              $.ajax({
+                  method: 'GET',
+                  url: './mlvch_kitchen.php',
+                  data : {
+                      'query' : 'updateAvail',
+                      'id' : values.id,
+                      'is_avail': values.is_avail? '1' : '0'
+                  },
+                  success: function(result) {
+                      loadNames();
+                  },
+                  failure: function(result) {
+                      console.log(result);
+                  }
+              });
+          }
+
+          function deleteName (values) {
+              $.ajax({
+                  method: 'GET',
+                  url: './mlvch_kitchen.php',
+                  data : {
+                      'query' : 'deleteName',
+                      'id' : values.id
+                  },
+                  success: function(result) {
+                      loadNames();
+                  },
+                  failure: function(result) {
+                      console.log(result);
+                  }
+              });
+          }
+
+          function insertName (values) {
+              $.ajax({
+                  method: 'GET',
+                  url: './mlvch_kitchen.php',
+                  data : {
+                      'query' : 'insertName',
+                      'name' : values.name,
+                      'is_avail' : values.is_avail? '1' : '0'
+                  },
+                  success: function(result) {
+                      if (result) {
+                          let data = JSON.parse(result);
+                          loadNames();
+                      }
+
+                  },
+                  failure: function(result) {
+                      console.log(result);
+                  }
+              });
+          }
+      }
+
+      function loadNames () {
+          $.ajax({
+              method: 'GET',
+              url: './mlvch_kitchen.php',
+              data : {
+                  'query' : 'getNames'
+              },
+              success: function(result) {
+                  if (result) {
+                      let data = JSON.parse(result);
+                      initGridName(data);
+                  }
+
+              },
+              failure: function(result) {
+                  console.log(result);
+              }
+          });
+      }
+
+      function loadInfo (INFO_FIELDS) {
+          $.ajax({
+              method: 'GET',
+              url: './mlvch_kitchen.php',
+              data: {
+                  'query': 'getInfoNew'
+              },
+              success: function (result) {
+                  if (result) {
+                      let data = JSON.parse(result);
+
+                      let INFO_DATA = {};
+                      data.forEach((el) => {
+                          let date_txt = moment(el.datetime_zakaz).format("DD.MM.YYYY");
+                          if (!INFO_DATA[date_txt])
+                              INFO_DATA[date_txt] = {};
+
+                          if (!INFO_DATA[date_txt]["val-" + el.id_name])
+                              INFO_DATA[date_txt]["val-" + el.id_name] = 0;
+
+                          INFO_DATA[date_txt]["date_zakaz"] = date_txt;
+                          INFO_DATA[date_txt]["val-" + el.id_name] += (+el.count);
+                      })
+
+                      let info_array = [];
+                      for (let i in INFO_DATA) {
+                          let el = INFO_DATA[i];
+                          let arr = {};
+
+                          info_array.push(el);
+                      }
+
+                      $("#infoGrid").jsGrid({
+                          width: "100%",
+                          height: "auto",
+                          inserting: false,
+                          editing: false,
+
+                          fields: INFO_FIELDS,
+                          data: info_array
+                      });
+                  }
+              },
+              failure: function (result) {
+                  console.log(result);
+              }
+          });
+      }
+
+      loadNames();
+  </script>
+-->
+  </body>
+</html>

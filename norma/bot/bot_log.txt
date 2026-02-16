@@ -1,0 +1,144 @@
+2025-05-22 19:56:05
+{"update_id":969152229,
+"message":{"message_id":354,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747932735,"text":"/expend","entities":[{"offset":0,"length":7,"type":"bot_command"}]}}
+
+2025-05-22 19:56:05
+{"update_id":969152230,
+"message":{"message_id":355,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747932739,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:56:05
+{"update_id":969152231,
+"message":{"message_id":356,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747932815,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:56:05
+{"update_id":969152234,
+"message":{"message_id":357,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747932842,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:56:05
+{"update_id":969152237,
+"message":{"message_id":358,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747932909,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:56:06
+{"update_id":969152238,
+"message":{"message_id":359,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747932949,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:56:06
+{"update_id":969152232,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747932840,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0}}}
+
+2025-05-22 19:56:06
+{"update_id":969152233,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747932842,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"}}}
+
+2025-05-22 19:56:07
+{"update_id":969152235,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747932908,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0}}}
+
+2025-05-22 19:56:07
+{"update_id":969152236,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747932908,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"}}}
+
+2025-05-22 19:56:26
+{"update_id":969152239,
+"message":{"message_id":366,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747932986,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:57:00
+{"update_id":969152240,
+"message":{"message_id":368,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933020,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:57:04
+{"update_id":969152241,
+"message":{"message_id":370,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933024,"text":"/expend","entities":[{"offset":0,"length":7,"type":"bot_command"}]}}
+
+2025-05-22 19:57:18
+{"update_id":969152242,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933038,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0}}}
+
+2025-05-22 19:57:19
+{"update_id":969152243,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933039,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"}}}
+
+2025-05-22 19:57:20
+{"update_id":969152244,
+"message":{"message_id":372,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933040,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:57:57
+{"update_id":969152245,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933076,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0}}}
+
+2025-05-22 19:57:57
+{"update_id":969152246,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933077,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"}}}
+
+2025-05-22 19:57:57
+{"update_id":969152247,
+"message":{"message_id":374,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933077,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 19:57:59
+{"update_id":969152248,
+"message":{"message_id":376,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933079,"text":"/expend","entities":[{"offset":0,"length":7,"type":"bot_command"}]}}
+
+2025-05-22 20:00:19
+{"update_id":969152249,
+"message":{"message_id":378,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933219,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 20:00:22
+{"update_id":969152250,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933222,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0}}}
+
+2025-05-22 20:00:23
+{"update_id":969152251,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933223,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"}}}
+
+2025-05-22 20:00:23
+{"update_id":969152252,
+"message":{"message_id":380,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933223,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 20:00:25
+{"update_id":969152253,
+"message":{"message_id":382,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933225,"text":"/expend","entities":[{"offset":0,"length":7,"type":"bot_command"}]}}
+
+2025-05-22 20:00:32
+{"update_id":969152254,
+"message":{"message_id":384,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933232,"text":"\u2795 \u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c"}}
+
+2025-05-22 20:02:58
+{"update_id":969152255,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933378,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0}}}
+
+2025-05-22 20:02:59
+{"update_id":969152256,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933379,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"}}}
+
+2025-05-22 20:02:59
+{"update_id":969152257,
+"message":{"message_id":386,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933379,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 20:03:02
+{"update_id":969152258,
+"message":{"message_id":388,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933382,"text":"/expend","entities":[{"offset":0,"length":7,"type":"bot_command"}]}}
+
+2025-05-22 20:03:09
+{"update_id":969152259,
+"message":{"message_id":390,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933389,"text":"\u2795 \u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c"}}
+
+2025-05-22 20:05:29
+{"update_id":969152260,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933528,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0}}}
+
+2025-05-22 20:05:29
+{"update_id":969152261,
+"my_chat_member":{"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"date":1747933529,"old_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"kicked","until_date":0},"new_chat_member":{"user":{"id":7966769250,"is_bot":true,"first_name":"\u041d\u041e\u0420\u041c\u0410","username":"NormaBreweryBot"},"status":"member"}}}
+
+2025-05-22 20:05:29
+{"update_id":969152262,
+"message":{"message_id":392,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933529,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+
+2025-05-22 20:05:30
+{"update_id":969152263,
+"message":{"message_id":394,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933530,"text":"/expend","entities":[{"offset":0,"length":7,"type":"bot_command"}]}}
+
+2025-05-22 20:05:32
+{"update_id":969152264,
+"message":{"message_id":396,"from":{"id":464101746,"is_bot":false,"first_name":"Elena","last_name":"Albytova","username":"albytova","language_code":"ru"},"chat":{"id":464101746,"first_name":"Elena","last_name":"Albytova","username":"albytova","type":"private"},"date":1747933532,"text":"\u2795 \u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c"}}
+

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: ubuntu; /* Гарнитура шрифта */
+    src: url(../../fonts/ubuntu.ttf); /* Путь к файлу со шрифтом */
+}
+
+.nav-link {
+}
+
+.nav-link:hover {
+}
+
+body * {
+    font-family: ubuntu;
+    font-size: 14px;
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#myGrid {
+    height: 60vh;
+    width: 90vw;
+}
+
+#resultText {
+    font-size: 20px;
+    color: #0d47a1;
+}
+
+#resultPanel {
+    height: 20vh;
+    width: 90vw;
+}
+
+.navbar {
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 0;
+}
+
+
+.header {
+    align-content: center;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer {
+    padding-left: 10px;
+}

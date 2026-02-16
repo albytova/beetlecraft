@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Тайный Пивной Санта">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Тайный Пивной Санта</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/76d74aabe4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body style="padding: 20px">
+
+<p>
+    <div id="nameGrid"></div>
+    <div style="margin: 10px">
+        <button onclick="startRandom()">Распределить</button>
+        <button onclick="sendSanta()">Отправить сообщения</button>
+    </div>
+</p>
+
+<script>
+    let DATA_USER = [];
+    let arr_id = [];
+    function startRandom () {
+        for (let i = 0; i < DATA_USER.length; i++) {
+            arr_id.push(DATA_USER[i]["id"]);
+        }
+        for (let i = 0; i < DATA_USER.length; i++) {
+
+            while (1) {
+                let r = randomInteger(0, arr_id.length);
+                if (arr_id[r] != DATA_USER[i]["id"]) {
+                    DATA_USER[i]["id_santa"] = arr_id[r];
+                    let d_arr_id = arr_id;
+                    arr_id = [];
+                    for (let j = 0; j < d_arr_id.length; j++) {
+                        if (r != j)
+                            arr_id.push(d_arr_id[j]);
+                    }
+                    console.log(arr_id);
+                    break;
+                }
+            }
+
+        }
+        console.log(DATA_USER);
+        $("#nameGrid").jsGrid("option", "data", DATA_USER);
+
+        function randomInteger(min, max) {
+            // случайное число от min до (max+1)
+            let rand = min + Math.random() * (max + 1 - min);
+            return Math.floor(rand);
+        }
+    }
+
+    function sendSanta () {
+        console.log('11111111111111');
+        $.ajax({
+            method: 'GET',
+            url: './secretsanta_admin.php',
+            data : {
+                'query' : 'sendSanta'
+            },
+            success: function(result) {
+                if (result) {
+                    let data = JSON.parse(result);
+                    console.log(data);
+                }
+
+            },
+            failure: function(result) {
+                console.log(result);
+            }
+        });
+    }
+
+    function initGridName (data) {
+
+        DATA_USER = data;
+
+        $("#nameGrid").jsGrid({
+            width: "95%",
+            height: "auto",
+            inserting: false,
+            editing: false,
+            data: data,
+
+            fields: [
+                { name: "id", type: "number", title: "id", width: 30, editing: false },
+                { name: "user", type: "text", title: "Пользователь", width: 100, editing: false },
+                { name: "alias", type: "text", title: "Имя", width: 100, editing: false },
+                { name: "id_santa", type: "number", title: "id_santa", width: 30, editing: false },
+                { name: "user_santa", type: "text", title: "Имя Санты", width: 100, editing: false }
+            ]
+        });
+
+        function updateAvail (values) {
+            $.ajax({
+                method: 'GET',
+                url: '../kitchen.php',
+                data : {
+                    'query' : 'updateAvail',
+                    'id' : values.id,
+                    'is_avail': values.is_avail? '1' : '0'
+                },
+                success: function(result) {
+                    loadNames();
+                },
+                failure: function(result) {
+                    console.log(result);
+                }
+            });
+        }
+
+        function deleteName (values) {
+            $.ajax({
+                method: 'GET',
+                url: '../kitchen.php',
+                data : {
+                    'query' : 'deleteName',
+                    'id' : values.id
+                },
+                success: function(result) {
+                    loadNames();
+                },
+                failure: function(result) {
+                    console.log(result);
+                }
+            });
+        }
+
+        function insertName (values) {
+            $.ajax({
+                method: 'GET',
+                url: '../kitchen.php',
+                data : {
+                    'query' : 'insertName',
+                    'name' : values.name,
+                    'is_avail' : values.is_avail? '1' : '0'
+                },
+                success: function(result) {
+                    if (result) {
+                        let data = JSON.parse(result);
+                        loadNames();
+                    }
+
+                },
+                failure: function(result) {
+                    console.log(result);
+                }
+            });
+        }
+    }
+
+    function loadNames () {
+        $.ajax({
+            method: 'GET',
+            url: './secretsanta_admin.php',
+            data : {
+                'query' : 'getNames'
+            },
+            success: function(result) {
+                if (result) {
+                    let data = JSON.parse(result);
+                    initGridName(data);
+                }
+
+            },
+            failure: function(result) {
+                console.log(result);
+            }
+        });
+    }
+
+    loadNames();
+</script>
+
+</body>
+</html>

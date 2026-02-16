@@ -1,0 +1,1 @@
+Данные от бота: Данные от бота: select CreateNewZakaz('beer line') as num

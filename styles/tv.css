@@ -1,0 +1,29 @@
+html, body {
+    height:100%;
+    background: black;
+    color: white;
+}
+
+.tv-cell {
+    padding: 5px;
+    text-align: center;
+
+}
+
+.tv-cell h3 {
+    border-bottom: 1px solid white;
+}
+
+.tv-cell-img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tv-food {
+    height: 90%;
+    width: 100%;
+}
+
+

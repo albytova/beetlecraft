@@ -1,0 +1,226 @@
+@font-face {
+    font-family: UnispaceRUS; /* Гарнитура шрифта */
+    src: url(../fonts/UnispaceRUS.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Merel; /* Гарнитура шрифта */
+    src: url(../fonts/Merel.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: N1020; /* Гарнитура шрифта */
+    src: url(../fonts/N1020.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: ubuntu; /* Гарнитура шрифта */
+    src: url(../fonts/ubuntu.ttf); /* Путь к файлу со шрифтом */
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #F0E5E1;
+}
+
+.loading {
+    cursor: wait;
+}
+
+/* Стили для toast */
+.toast {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 50%; /* Позиционируем по центру вертикально */
+    left: 50%; /* Позиционируем по центру горизонтально */
+    transform: translate(-50%, -50%); /* Центрируем точно по середине */
+    background-color: white; /* Белый фон */
+    color: black; /* Черный шрифт */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.3s ease-in-out; /* Анимация появления */
+}
+
+.toast.show {
+    opacity: 1; /* Полная видимость */
+}
+
+.toast a {
+    color: #1a73e8; /* Синий цвет для ссылки */
+    text-decoration: none;
+}
+
+.toast a:hover {
+    text-decoration: underline;
+}
+
+body * {
+  font-family: ubuntu;
+}
+
+.navbar {
+  background-color: black;
+  font-weight: bold;
+  padding-left: 10px;
+  border-radius: 0;
+}
+
+.header {
+   align-content: center;
+   background-color: black;
+   padding: 15px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: white;
+    color: black;
+}
+
+.table-hover tbody tr:hover td {
+  background-color: #F0E5E1;
+  font-weight: bold;
+} 
+/*
+table {
+  height: 100%;
+}*/
+
+footer {
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+}
+
+.btn-label {position: relative;right: -12px;display: inline-block;background: none;border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
+
+.btn-brewery {
+  background: #0033cc; 
+  color: white;
+}
+
+#draftFilterPanel .btn { 
+  margin-top:5px; 
+  margin-bottom:5px; 
+  margin-left: 2px; 
+}
+
+.btn-label {
+  padding-top: 2px;
+  padding-bottom: 1px;
+  padding-right: 5px;
+}
+
+.draft-name {
+        font-weight: bolder;
+        font-size: 14pt;
+        padding-left: 5px;
+      }
+      .draft-style {
+        color: green;
+        padding-left: 5px;
+      }
+      .draft-abv {
+        padding-left: 5px;
+      }
+      .draft-numtap {
+        font-size: 26pt;
+        padding: 0;
+        margin-right: 3px;
+      }
+      .draft-brewery {
+        font-style: italic;
+        padding-left: 5px;
+        color: blue;
+      }
+      .draft-typecost-mbl {
+        color: grey;
+        margin-right: 5px;
+      }
+      .jsgrid-cell {
+        padding: 0;
+        background-color: white;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid grey;
+          word-wrap: break-word;
+          white-space: pre-wrap;
+          white-space: -moz-pre-wrap; 
+          white-space: -pre-wrap; 
+          white-space: -o-pre-wrap; 
+          overflow: hidden;        
+      }
+      .jsgrid-header-cell {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1px;
+        padding-right: 1px;
+        font-size: 9pt;
+      }
+
+      #draftFilterPanel {
+        padding: 0;
+      }
+
+      #draftFilterPanel button.btn {
+        padding: 2px;
+        font-size: 10pt;
+        border-radius: 2px;
+        margin-right: 0;
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+
+      .app-name {
+        font-size: 14px;
+        vertical-align: middle;
+        line-height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+
+      .rotate {
+        -moz-transform: rotate(-90.0deg);
+        -o-transform: rotate(-90.0deg);
+        -webkit-transform: rotate(-90.0deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+        transform: rotate(-90.0deg);
+      }
+
+      .tdTypeCost {
+        margin: 0;
+        padding: 2px;
+        font-size: 8pt;
+        /*background-color: #e7f6e0;*/
+        color: black;
+        width: 47px;
+        border-top: 1px solid grey;
+      }
+
+      .tdVolume {
+        color: grey;
+        padding-right: 10px;
+        font-size: 12px;
+      }

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пивоварня "Норма"</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+            src="fontawesome/js/all.js"
+            data-auto-replace-svg="nest"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.scss"/>
+</head>
+<body>
+
+<!-- Шапка -->
+<div class="full-width-section">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" ><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Сорта</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Партнеры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Сотрудничество</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" ><i class="fa-brands fa-telegram"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" ><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Шапка с текстом и кнопками -->
+    <div class="full-width-section">
+        <img src="./img/top.jpg" alt="Пивоварня Норма">
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Описание -->
+    <div class="description">
+        <p>Мы создаём качественное и вкусное пиво, вдохновляясь традиционными стилями и смелыми экспериментами. Наша цель — не только удивлять ценителей пива, но и знакомить людей с искусством пивоварения, делиться нашей страстью и знаниями. Мы верим, что настоящее пиво — это сочетание мастерства, качественных ингредиентов и любви к своему делу. Каждая наша кружка — это приглашение в мир вкуса, традиций и инноваций</p>
+    </div>
+
+    <!-- Карусель сортов пива с использованием Bootstrap -->
+    <h2 id="beers">Наши сорта пива</h2>
+    <div id="beerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Индикаторы -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#beerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#beerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#beerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#beerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <!-- Слайды -->
+        <div class="carousel-inner">
+            <!-- Слайд 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/pils.jpg" alt="GERMAN PILS (НЕМЕЦ)">
+                    </div>
+                    <div class="col-md-6 carousel-description">
+                        <div>
+                            <h3>GERMAN PILS (НЕМЕЦ)</h3>
+                            <p>Стиль: Немецкий Пилснер<br>
+                                Крепость: 4.5%<br>
+                                Плотность: 11.5%</p>
+                        <p>
+                                Классический Немецкий Пилс характеризуется соломенным цветом и выраженным характером хмеля. Он хорошо выброжен и поэтому очень сухой, с освежающим финишем. Сильно карбонизирован. Обладает отчетливым хмельным ароматом, золотистым цветом и упругой пенкой.
+                        <br><br>
+                                Немецкий Пилс - это адаптированный чешский пилснер, приспособленный к условиям Германии, в частности, к воде с высоким содержанием минералов и местным разновидностям хмелей.
+
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Слайд 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/cheh.jpg" alt="ЧЕШСКИЙ ПИЛСНЕР (ЧЕХ)">
+                    </div>
+                    <div class="col-md-6 carousel-description">
+                        <div>
+                            <h3>ЧЕШСКИЙ ПИЛСНЕР (ЧЕХ)</h3>
+                            <p>
+                                Стиль: Czech Pilsner<br>
+                                Крепость: 5%<br>
+                                Плотность: 12%
+                            </p>
+                            <p>
+                                Чешский Пилс - это мягкий охмелённый светлый лагер с выраженным ароматом и вкусом хмеля, а также насыщенным солодовым вкусом. В нём больше цвета и тела, чем Немецком Пилснере. Чешский Пилс ощущается более сложным, солодовым и насыщенным в сравнении с Немецким.
+                                <br><br>
+                                Вода, используемая для чешского пилса, содержит очень мало минералов. Такая вода в сочетании с полным телом, с более «сильным» вкусовым профилем, даёт чешскому пиву более сбалансированный вкус, чем у сухих немецких версий.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Слайд 3 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/zhigul.jpg" alt="ЖИГУЛЬ">
+                    </div>
+                    <div class="col-md-6 carousel-description">
+                        <div>
+                            <h3>ЖИГУЛЬ</h3>
+                            <p>Стиль: Светлый Лагер<br>
+                                Крепость: 5.2%<br>
+                                Плотность: 12.5%<br>
+                            </p>
+                            <p>
+                                Сварен методом двойного отварочного затирания. Такой метод позволяет извлечь выраженный солодовый вкус, золотой цвет и насыщенные карамельные ноты.
+                                <br>
+                                Чтобы добиться большей схожести с Жигулёвским пивом времен СССР, мы используем в заторе 30% кукурузы (затор — это смесь дроблёных зернопродуктов). Кукуруза придает пиву более выраженный аромат, а также добавляет сладости во вкусовой профиль.
+                                <br>
+                                Жигуль имеет насыщенный вкус, полное тело, высокую пеностойкость, золотистый цвет и ноты карамели.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Слайд 4 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/sura.jpg" alt="Сурское Светлое">
+                    </div>
+                    <div class="col-md-6 carousel-description">
+                        <div>
+                            <h3>Сурское</h3>
+                            <p>Стиль: Светлый Лагер<br>
+                                Крепость: 4%<br>
+                                Плотность: 9.6%<br>
+                            </p>
+                            <p>Лёгкий светлый евролагер. Самый лёгкий и питкий среди остальных сортов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Слайд 5 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/pitony.jpg" alt="Питоны 3000">
+                    </div>
+                    <div class="col-md-6 carousel-description">
+                        <div>
+                            <h3>Питоны 3000</h3>
+                            <p>Стиль: APA<br>
+                                Крепость: 5.4%<br>
+                                Плотность: 13%<br>
+                            </p>
+                            <p>American Pale Ale, охмеленный хмелями: Citra, Simkoe, Centennial, Amarillo, Mosaic, Фаворит, Подвязанный, Hercules</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Кнопки управления -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#beerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#beerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+<br>
+    <!-- Партнеры -->
+    <h2>Наши партнеры</h2>
+    <div class="partners">
+        <img src="partner1.png" alt="Партнер 1">
+        <img src="partner2.png" alt="Партнер 2">
+        <img src="partner3.png" alt="Партнер 3">
+    </div>
+
+    <!-- Контакты -->
+    <h2>Контакты</h2>
+    <div class="contacts">
+        <p>Адрес: ул. Пивоваров, 15, г. Москва</p>
+        <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+        <p>Email: <a href="mailto:info@norma-beer.ru">info@norma-beer.ru</a></p>
+    </div>
+</div>
+
+<!-- Футер -->
+<div class="footer">
+    &copy; 2023 Пивоварня "Норма". Все права защищены. | <a href="#">Политика конфиденциальности</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.beer-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+</body>
+</html>
