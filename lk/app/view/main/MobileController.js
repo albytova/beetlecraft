@@ -73,12 +73,11 @@ Ext.define('beetlecraft.view.main.MobileController', {
     },
 
     //Формирование информации о кегах на складе
-    getStorageInfo: function (message1) {
+    getStorageInfo: function (message) {
 
         const me = this;
         const dtShift = me.getView().lookupReference("dtfld_dateshift").getValue();
 
-        let message = "<b>Смена от " + Ext.Date.format(dtShift, 'd.m.Y') + "</b>\n\n";
         message += "\n\n<b><u>Кеги на складе:</u></b>";
 
         Ext.Ajax.request ({
@@ -93,7 +92,8 @@ Ext.define('beetlecraft.view.main.MobileController', {
                 for (let i = 0; i < dtStorage.length; i++) {
                     message += "\n" + dtStorage[i]["beer_name"] + " [" + dtStorage[i]["tare_name"] + "]";
                 }
-                me.getAdditionalInfo(message1, message);
+
+                me.getAdditionalInfo(message);
             },
             failure: function (result) {
                 Ext.Msg.alert(result.responseText);
@@ -102,7 +102,7 @@ Ext.define('beetlecraft.view.main.MobileController', {
     },
 
     //Формирования списка дополнительных товаров
-    getAdditionalInfo: function (message1, message) {
+    getAdditionalInfo: function (message) {
 
         const me = this;
 
@@ -122,11 +122,11 @@ Ext.define('beetlecraft.view.main.MobileController', {
 
         message += txtAdditional.getValue()? "\n" + txtAdditional.getValue() : "" ;
 
-        me.getFinance(message1, message);
+        me.getFinance(message);
     },
 
     //Формирования финансовых показателей
-    getFinance: function (message1, message2) {
+    getFinance: function (message) {
 
         const me = this;
 
@@ -158,14 +158,12 @@ Ext.define('beetlecraft.view.main.MobileController', {
                     },
                     success: function (result) {
 
-                        let message = "<b>Смена от " + Ext.Date.format(date_shift, 'd.m.Y') + "</b>\n\n";
-                        message += "<b>Выручка: " + money_all + "руб</b>\n";
+                        //let message = "<b>Смена от " + Ext.Date.format(date_shift, 'd.m.Y') + "</b>\n\n";
+                        message += "\n\n<b>Выручка: " + money_all + "руб</b>\n";
                         message += "Оплата по картам: " + (money_sber + money_tochka) + "руб\n";
                         message += money_transfer? "Оплата переводами: " + money_transfer + "руб\n" : "";
                         message += "<b>Сейчас в кассе: " + value_cash + "руб</b>\n";
 
-                        me.sendTelegram(message1);
-                        me.sendTelegram(message2);
                         me.sendTelegram(message);
 
                         Ext.Msg.alert("Закрытие смены", "Смена закрыта");

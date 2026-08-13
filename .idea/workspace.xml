@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8952de51-4242-416e-a9cd-3530122b3ee0" name="Default Changelist" comment="" />
+    <list default="true" id="8952de51-4242-416e-a9cd-3530122b3ee0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/app/view/main/MobileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/lk/app/view/main/MobileController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/app/view/main/Purshace/ShipmentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/lk/app/view/main/Purshace/ShipmentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/app/view/main/Shift/Shift.js" beforeDir="false" afterPath="$PROJECT_DIR$/lk/app/view/main/Shift/Shift.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/app/view/main/Shift/ShiftController.js" beforeDir="false" afterPath="$PROJECT_DIR$/lk/app/view/main/Shift/ShiftController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/app/view/main/Store/MenuBottleController.js" beforeDir="false" afterPath="$PROJECT_DIR$/lk/app/view/main/Store/MenuBottleController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/app/view/main/Store/StorageController.js" beforeDir="false" afterPath="$PROJECT_DIR$/lk/app/view/main/Store/StorageController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/cen_beetle.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/lk/cen_beetle.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/php/Admission.php" beforeDir="false" afterPath="$PROJECT_DIR$/lk/php/Admission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/php/service.php" beforeDir="false" afterPath="$PROJECT_DIR$/lk/php/service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/php/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/lk/php/test.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +33,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2jk9UIudyINLC8T95DM0YO1vR1V" />
   <component name="ProjectViewState">
@@ -559,6 +576,12 @@
       <workItem from="1758296587562" duration="1781000" />
       <workItem from="1758298390816" duration="595000" />
       <workItem from="1758550756418" duration="1304000" />
+      <workItem from="1774283674989" duration="1696000" />
+      <workItem from="1774285639560" duration="1814000" />
+      <workItem from="1774287477457" duration="1178000" />
+      <workItem from="1774289339286" duration="289000" />
+      <workItem from="1781775712223" duration="918000" />
+      <workItem from="1781865135888" duration="1158000" />
     </task>
     <servers />
   </component>

@@ -602,7 +602,12 @@ Ext.define('beetlecraft.view.main.Shift.ShiftController', {
                     const field = me.getView().lookupReference("fld_text_loadfile");
                     field.reset();
                     me.reloadShifts();
-                    me.sendActualStorageInfo(selectedRecord.data["date_shift"]);
+
+                    const check = me.getView().lookupReference("check_sendchannel");
+                    console.log(check);
+                    if (check.getValue())
+                        console.log('11111');
+                        //me.sendActualStorageInfo(selectedRecord.data["date_shift"]);
 
                 } else {
                     Ext.Msg.alert('Ошибка', response.message);

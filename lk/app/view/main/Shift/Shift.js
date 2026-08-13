@@ -213,6 +213,7 @@ Ext.define('beetlecraft.view.main.Shift.Shift', {
                                 {
                                     xtype: 'formpanel',
                                     reference: 'form_loadfile',
+                                    layout: 'hbox',
                                     items: [
                                         {
                                             xtype: 'fieldset',
@@ -239,6 +240,14 @@ Ext.define('beetlecraft.view.main.Shift.Shift', {
                                                     margin: '5 5 5 5'
                                                 },
                                             ]
+                                        },
+
+                                        {
+                                            xtype: 'checkbox',
+                                            boxLabel: 'Отправить отчет',
+                                            reference: 'check_sendchannel',
+                                            inputValue: '1', // Value to submit when checked
+                                            checked: true // Initial state (optional)
                                         }
                                     ]
                                 },

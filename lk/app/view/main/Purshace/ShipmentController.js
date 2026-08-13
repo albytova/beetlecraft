@@ -232,7 +232,7 @@ Ext.define('beetlecraft.view.main.Purshace.ShipmentController', {
             success: function (result) {
 
                 console.log(result);
-
+                //window.open('https://beetlecraft.ru/lk/cen_beetle.pdf', '_blank');
             },
             failure: function (result) {
                 console.log(result);

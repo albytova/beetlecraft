@@ -162,157 +162,215 @@ function _create_price_tags($data) {
 
     $pdf_data = $dompdf->output();
     $rez = file_put_contents("../cen_beetle.pdf", $pdf_data);
+    
+
 
     return $total_pages;
 }
 
-        /* Отправка сообщения в Telegram */
-        function _send_message($message, $photoPath, $documentPath) {
 
-            // Test;
-            $tg_chat_id  = '-1002124877252';
+/* Отправка сообщения в Telegram */
+function _send_message($message, $photoPath, $documentPath) {
+    // Test;
+    //$tg_chat_id  = '-1002124877252';
 
-            // Prodaction
-            //$tg_chat_id  = '-1001799024183';
+    // Prodaction
+    $tg_chat_id  = '-1001799024183';
+    $tg_bot_token = '6918947975:AAFt9DkZ5V39oK7qkfOdlgshNVZV7m3IePs';
 
-            $tg_bot_token = '6918947975:AAFt9DkZ5V39oK7qkfOdlgshNVZV7m3IePs';
-
-            if (isset($photoPath) && (strlen($photoPath) > 10))  {
-
-                    _send_photo($tg_chat_id, $tg_bot_token, $message, $photoPath);
-            }
-            else {
-
-                    if (isset($documentPath) && (strlen($documentPath) > 10))  {
-
-                        _send_document($tg_chat_id, $tg_bot_token, $message, $documentPath);
-                    }
-                    else {
-
-                        $parameters = array(
-                            'chat_id' => $tg_chat_id,
-                            'parse_mode' => "HTML",
-                            'text' => $message
-                        );
-
-                        _send_telegram('sendMessage', $tg_bot_token, $parameters);
-                    }
-            }
+    if (isset($photoPath) && (strlen($photoPath) > 10)) {
+        _send_photo($tg_chat_id, $tg_bot_token, $message, $photoPath);
+    }
+    else {
+        if (isset($documentPath) && (strlen($documentPath) > 10)) {
+            _send_document($tg_chat_id, $tg_bot_token, $message, $documentPath);
         }
-
-        /* Отправка сообщения в Telegram для Админа */
-        function _send_message_admin($message, $photoPath) {
-            $tg_chat_id  = '-1002259216582';
-            $tg_bot_token = '6918947975:AAFt9DkZ5V39oK7qkfOdlgshNVZV7m3IePs';
-
-            if (isset($photoPath) && (strlen($photoPath) > 10))  {
-
-                    _send_photo($tg_chat_id, $tg_bot_token, $message, $photoPath);
-            }
-            else {
-
-                $parameters = array(
-                    'chat_id' => $tg_chat_id,
-                    'parse_mode' => "HTML",
-                    'text' => $message
-                );
-
-                _send_telegram('sendMessage', $tg_bot_token, $parameters);
-            }
-        }
-
-        /* Отправка фотографии и текстого сообщения в Telegram */
-        function _send_photo($tg_chat_id, $tg_bot_token, $caption, $photoPath) {
-
-            // URL для отправки фото через Telegram Bot API
-            $url = "https://api.telegram.org/bot$tg_bot_token/sendPhoto";
-
-            // Подготовка данных для отправки
-            $postData = [
+        else {
+            $parameters = array(
                 'chat_id' => $tg_chat_id,
-                'photo' => $photoPath,
-                'caption' => $caption,
-                'parse_mode' => "HTML"
-            ];
-
-            // Инициализация cURL
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-            // Выполнение запроса
-            $response = curl_exec($ch);
-
-            // Проверка на ошибки
-            if (curl_errno($ch)) {
-                echo 'Ошибка cURL: ' . curl_error($ch);
-            } else {
-                // Вывод ответа от Telegram API
-                echo $response;
-            }
-
-            // Закрытие соединения
-            curl_close($ch);
-
-           // _send_telegram('sendPhoto', $parameters);
-        }
-
-        /* Отправка документа и текстого сообщения в Telegram */
-        function _send_document($tg_chat_id, $tg_bot_token, $caption, $documentPath) {
-
-            // URL для отправки документа через Telegram Bot API
-            $url = "https://api.telegram.org/bot$tg_bot_token/sendDocument";
-            $file = new CURLFile("../cen_beetle.pdf", mime_content_type("../cen_beetle.pdf"), basename("../cen_beetle.pdf"));
-            // Подготовка данных для отправки
-            $postData = [
-                'chat_id' => $tg_chat_id,
-                'document' => $file,//$documentPath,
-                'caption' => $caption,
-                'parse_mode' => "HTML"
-            ];
-
-            // Инициализация cURL
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: multipart/form-data']); // Важно!
-
-            // Выполнение запроса
-            $response = curl_exec($ch);
-
-            // Проверка на ошибки
-            if (curl_errno($ch)) {
-                echo 'Ошибка cURL: ' . curl_error($ch);
-            } else {
-                // Вывод ответа от Telegram API
-                echo $response;
-            }
-
-            // Закрытие соединения
-            curl_close($ch);
-
-           // _send_telegram('sendPhoto', $parameters);
-        }
-
-        /* Отправка сообщения в Telegram */
-        function _send_telegram($method, $tg_bot_token, $parameters, $headers = [])
-        {
-        	$token = '6918947975:AAFt9DkZ5V39oK7qkfOdlgshNVZV7m3IePs';
-            $url = "https://api.telegram.org/bot" .$tg_bot_token. "/".$method;
-
-            $options = array(
-                'http' => array(
-                    'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                    'method' => 'POST',
-                    'content' => http_build_query($parameters)
-                )
+                'parse_mode' => "HTML",
+                'text' => $message
             );
 
-            $context = stream_context_create($options);
-            file_get_contents($url, false, $context);
+            _send_telegram('sendMessage', $tg_bot_token, $parameters);
         }
+    }
+}
+
+/* Отправка сообщения в Telegram для Админа */
+function _send_message_admin($message, $photoPath) {
+    $tg_chat_id  = '-1002259216582';
+    $tg_bot_token = '6918947975:AAFt9DkZ5V39oK7qkfOdlgshNVZV7m3IePs';
+
+    if (isset($photoPath) && (strlen($photoPath) > 10)) {
+        _send_photo($tg_chat_id, $tg_bot_token, $message, $photoPath);
+    }
+    else {
+        $parameters = array(
+            'chat_id' => $tg_chat_id,
+            'parse_mode' => "HTML",
+            'text' => $message
+        );
+
+        _send_telegram('sendMessage', $tg_bot_token, $parameters);
+    }
+}
+
+/* Отправка фотографии и текстового сообщения в Telegram */
+function _send_photo($tg_chat_id, $tg_bot_token, $caption, $photoPath) {
+    // URL для отправки фото через прокси
+    $proxy_url = 'https://telegram-proxy.albytova-elena.workers.dev';
+    $url = "{$proxy_url}/bot{$tg_bot_token}/sendPhoto";
+
+    // Проверяем существование файла
+   /* if (!file_exists($photoPath)) {
+        error_log("File not found: {$photoPath}");
+        return false;
+    }*/
+
+    // Подготовка данных для отправки с использованием CURLFile
+    $postData = [
+        'chat_id' => $tg_chat_id,
+       'photo' => $photoPath,
+       // 'photo' => new CURLFile($photoPath, mime_content_type($photoPath), basename($photoPath)),
+        'caption' => $caption,
+        'parse_mode' => "HTML"
+    ];
+
+    // Инициализация cURL
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+
+    // Выполнение запроса
+    $response = curl_exec($ch);
+
+    // Проверка на ошибки
+    if (curl_errno($ch)) {
+        error_log('CURL Error (_send_photo): ' . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code != 200) {
+        error_log("HTTP Error (_send_photo): {$http_code}");
+        return false;
+    }
+
+    return json_decode($response, true);
+}
+
+/* Отправка документа и текстового сообщения в Telegram */
+function _send_document($tg_chat_id, $tg_bot_token, $caption, $documentPath) {
+    // URL для отправки документа через прокси
+    $proxy_url = 'https://telegram-proxy.albytova-elena.workers.dev';
+    $url = "{$proxy_url}/bot{$tg_bot_token}/sendDocument";
+
+    // Проверяем существование файла
+   /* if (!file_exists($documentPath)) {
+        error_log("File not found: {$documentPath}");
+        return false;
+    }*/
+
+    // Создаем CURLFile для документа
+   // $file = new CURLFile($documentPath, mime_content_type($documentPath), basename($documentPath));
+$file = new CURLFile("../cen_beetle.pdf", mime_content_type("../cen_beetle.pdf"), basename("../cen_beetle.pdf"));
+
+    // Подготовка данных для отправки
+    $postData = [
+        'chat_id' => $tg_chat_id,
+        'document' => $file,
+        'caption' => $caption,
+        'parse_mode' => "HTML"
+    ];
+
+    // Инициализация cURL
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+
+    // Выполнение запроса
+    $response = curl_exec($ch);
+
+    // Проверка на ошибки
+    if (curl_errno($ch)) {
+        error_log('CURL Error (_send_document): ' . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code != 200) {
+        error_log("HTTP Error (_send_document): {$http_code}");
+        return false;
+    }
+
+    return json_decode($response, true);
+}
+
+/* Отправка сообщения в Telegram (универсальная функция) */
+function _send_telegram($method, $tg_bot_token, $parameters, $headers = []) {
+    // Используем прокси вместо прямого API
+    $proxy_url = 'https://telegram-proxy.albytova-elena.workers.dev';
+    $url = "{$proxy_url}/bot{$tg_bot_token}/{$method}";
+
+    // Инициализация cURL
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+
+    // Если переданы файлы (для sendPhoto, sendDocument и т.д.)
+    $hasFile = false;
+    foreach ($parameters as $key => $value) {
+        if ($value instanceof CURLFile) {
+            $hasFile = true;
+            break;
+        }
+    }
+
+    if ($hasFile) {
+        // Для multipart/form-data (отправка файлов)
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $parameters);
+    } else {
+        // Для обычных POST запросов
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($parameters));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/x-www-form-urlencoded']);
+    }
+
+    // Выполнение запроса
+    $response = curl_exec($ch);
+
+    // Проверка на ошибки
+    if (curl_errno($ch)) {
+        error_log('CURL Error (_send_telegram): ' . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code != 200) {
+        error_log("HTTP Error (_send_telegram): {$http_code}");
+        return false;
+    }
+
+    return json_decode($response, true);
+}
     ?>

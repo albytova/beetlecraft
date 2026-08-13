@@ -30,7 +30,7 @@ Ext.define('beetlecraft.view.main.Store.MenuBottleController', {
             success: function (result) {
 
                 console.log(result);
-
+                //window.open('https://beetlecraft.ru/lk/cen_beetle.pdf', '_blank');
             },
             failure: function (result) {
                 Ext.Msg.alert("Внимание", result.responseText);

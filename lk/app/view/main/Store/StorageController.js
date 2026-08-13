@@ -271,7 +271,7 @@ Ext.define('beetlecraft.view.main.Store.StorageController', {
 
                 console.log(result);
 
-                window.open('https://beetlecraft.ru/lk/cen_beetle.pdf', '_blank');
+                //window.open('https://beetlecraft.ru/lk/cen_beetle.pdf', '_blank');
             },
             failure: function (result) {
                 Ext.Msg.alert(result.responseText);
@@ -284,6 +284,7 @@ Ext.define('beetlecraft.view.main.Store.StorageController', {
 
         const gridStorageBottle = this.getView().lookupReference("grid_storage_bottle");
         const dataStorageBottle = gridStorageBottle.getStore().getData().items;
+        const me = this;
 
         let bbData = [];
 

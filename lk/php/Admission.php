@@ -97,13 +97,14 @@
             echo "1";
         }
 
-        /* Отправка сообщения в Телеграм */
-        function sendMessageTG($message, $photo, $document) {
-            _send_message($message, $photo, $document);
-        }
+/* Отправка сообщения в Телеграм */
+function sendMessageTG($message, $photo, $document) {
+    _send_message($message, $photo, $document);
+}
 
-        /* Отправка сообщения в Телеграм Администратору*/
-        function sendMessageTGAdmin($message, $photo) {
-            _send_message_admin($message, $photo, $document);
-        }
+/* Отправка сообщения в Телеграм Администратору */
+function sendMessageTGAdmin($message, $photo) {
+    // _send_message_admin принимает только 2 параметра: message и photoPath
+    _send_message_admin($message, $photo);
+}
 ?>

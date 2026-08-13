@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f6b53f-42dc-457a-9ae8-9026608d0b8a" name="Default Changelist" comment="" />
+    <list default="true" id="f5f6b53f-42dc-457a-9ae8-9026608d0b8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/Purshace/ShipmentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/Purshace/ShipmentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/Shift/Shift.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/Shift/Shift.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/Shift/ShiftController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/Shift/ShiftController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/Store/MenuBottleController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/Store/MenuBottleController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cen_beetle.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/cen_beetle.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Storage.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Storage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/service.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/service.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +41,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="35L31jEGM05hc49gej1F3n696Ri" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,17 +100,35 @@
       <workItem from="1770138013845" duration="1529000" />
       <workItem from="1770140238902" duration="1300000" />
       <workItem from="1770286456340" duration="605000" />
+      <workItem from="1773158382588" duration="1050000" />
+      <workItem from="1773160214147" duration="784000" />
+      <workItem from="1773673315558" duration="1836000" />
+      <workItem from="1773675178329" duration="823000" />
+      <workItem from="1773917161633" duration="438000" />
+      <workItem from="1774281213219" duration="1294000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1763139696081">
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1773917504949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1763139696081" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1773917504949" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1767618561051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
