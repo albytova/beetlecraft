@@ -1,0 +1,47 @@
+/* Общие настройки контейнера */
+.order-container {
+    max-width: 750px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Элемент строки меню (Блюдо + Цена слева, Инпут справа) */
+.dish-row {
+    padding: 6px 10px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Текст внутри строки меню */
+.dish-info {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Поле ввода количества (без скруглений и теней) */
+.dish-input {
+    width: 75px;
+    border-radius: 0px !important;  /* Полностью убирает скругление углов */
+    box-shadow: none !important;    /* Полностью отключает внутренние и внешние тени */
+    border: 1px solid #ced4da;      /* Оставляет простую классическую рамку */
+}
+
+/* Дополнительно убираем синее свечение и тени при клике на поле ввода */
+.dish-input:focus {
+    border-color: #80bdff;          /* Цвет рамки при фокусе */
+    box-shadow: none !important;    /* Отключает появление тени при клике */
+    outline: 0;
+}
+
+/* Стили для ссылок-чекбоксов */
+.style-pointer {
+    cursor: pointer;
+}
+
+/* Текст вывода сдачи */
+.style-result-text {
+    font-size: 16px;
+}

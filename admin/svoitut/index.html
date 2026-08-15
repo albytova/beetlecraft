@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Заказ на кухню</title>
+
+    <!-- Подключаем библиотеки строго в правильном порядке -->
+    <script src="jquery.js"></script>
+    <script src="https://cloudflare.com"></script>
+
+    <script src="https://fontawesome.com"></script>
+    <script src="moment.js"></script>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- Наш собственный стиль -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container order-container">
+    <h1 class="mb-4 font-weight-bold">Заказ на кухню</h1>
+
+    <!-- Блок комментария -->
+    <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+            <div class="form-group mb-0">
+                <label for="area-comment" class="font-weight-bold text-muted">Комментарий к заказу:</label>
+                <input id="area-comment" class="form-control form-control-lg" placeholder="Например: без лука, приборы, острый соус...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Контейнер для динамического вывода блюд из Google Таблицы -->
+    <div id="p-names" class="card shadow-sm overflow-hidden mb-4">
+        <!-- Блюда загрузятся сюда автоматически -->
+    </div>
+
+    <!-- Крупная зеленая кнопка оформления справа -->
+    <div class="mb-5" style="width: 100%; display: block;">
+        <button type="button" class="btn btn-success font-weight-bold shadow-sm" style="float: right; font-size: 22px; padding: 15px 50px; border-radius: 8px;" onclick="check_zakaz()">
+            <i class="fa fa-shopping-cart mr-2"></i> Оформить заказ
+        </button>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- Блок всплывающих уведомлений -->
+    <div class="mt-4">
+        <div id="message-success" class="alert alert-success p-3 shadow-sm" style="display: none; font-size: 18px;">
+            <i class="fa fa-check-circle mr-2"></i> <b>Заказ успешно отправлен!</b>
+        </div>
+        <div id="message-error" class="alert alert-danger p-3 shadow-sm" style="display: none; font-size: 18px;">
+            <i class="fa fa-exclamation-circle mr-2"></i> <b>Вы не выбрали ни одного блюда!</b> Укажите количество перед отправкой.
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО ПРОВЕРКИ (Изначально скрыто через класс 'modal fade') -->
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content shadow-lg border-0">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title font-weight-bold"><i class="fa fa-file-text-o mr-2"></i> Проверка заказа</h5>
+                <button type="button" class="close text-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="font-weight-bold text-muted mb-3">Ваш выбор:</h6>
+                <ul id="modal-dish-list" class="list-group mb-3 border-0"></ul>
+
+                <h4 class="text-right mb-4">Итого к оплате: <span id="modal-total-price" class="font-weight-bold text-success">0</span> руб.</h4>
+
+                <hr>
+
+                <!-- Способ оплаты -->
+                <div class="form-group">
+                    <label class="font-weight-bold text-muted mb-2">Способ оплаты:</label>
+                    <div class="custom-control custom-checkbox mb-2">
+                        <input type="checkbox" id="payment-cash" class="custom-control-input" onchange="selectPayment('cash')">
+                        <label class="custom-control-label style-pointer" for="payment-cash">Наличные</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" id="payment-card" class="custom-control-input" checked onchange="selectPayment('card')">
+                        <label class="custom-control-label style-pointer" for="payment-card">Безнал (Карта / СБП)</label>
+                    </div>
+                </div>
+
+                <!-- Блок расчета сдачи -->
+                <div id="cash-change-block" class="form-group border p-3 bg-light rounded" style="display: none;">
+                    <label for="cash-given" class="font-weight-bold">С какой суммы подготовить сдачу?</label>
+                    <div class="input-group">
+                        <input type="number" id="cash-given" class="form-control form-control-lg" placeholder="Введите сумму денег" min="0" oninput="calculateChange()">
+                        <div class="input-group-append">
+                            <span class="input-group-text">руб.</span>
+                        </div>
+                    </div>
+                    <div id="change-result" class="mt-2 font-weight-bold style-result-text"></div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Изменить</button>
+
+                <button type="button" class="btn btn-success px-4 font-weight-bold" onclick="send_zakaz()">Подтвердить и отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Наш собственный скрипт -->
+<script src="script.js"></script>
+
+</body>
+</html>
